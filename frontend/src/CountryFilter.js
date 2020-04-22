@@ -75,7 +75,7 @@ function CountryFilterTextInput(props) {
 }
 
 function CountryFilterTable(props) {
-	let matchingCountries = [];
+	let matchingCountries;
 	if (props.filterText.length === 0) {
 		matchingCountries = props.countries.slice();
 	}
@@ -115,39 +115,6 @@ function CountryFilterTable(props) {
 			</table>
 		</div>
 	);
-	
-	//
-	//
-	//
-	// return (
-	// 	<div>
-	// 		<p>Will filter on {props.filterText}</p>
-	// 		<table>
-	// 			<thead>
-	// 				<th>Name</th>
-	// 				<th>ISO 3166-1 alpha-2 code</th>
-	// 				<th>Continent</th>
-	// 				<th>Nationality</th>
-	// 				<th>Currency Code</th>
-	// 			</thead>
-	// 			<tbody>
-	// 				{props.countries
-	// 				      .filter(country => true)
-	// 				      .map(country => (
-	// 				      	<tr>
-	// 					      </tr>
-	// 				      ))}
-	// 			</tbody>
-	// 		</table>
-	// 		<ul>
-	// 			{props.countries.map(country => (
-	// 				<li key={country.isoCode}>
-	// 					{country.name}
-	// 				</li>
-	// 			))}
-	// 		</ul>
-	// 	</div>
-	// );
 }
 
 export default CountryFilter;

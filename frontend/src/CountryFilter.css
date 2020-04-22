@@ -2,10 +2,15 @@
   text-align: left;
 }
 
+.CountryFilter input {
+  margin-left: 5px;
+}
+
 .CountryFilter table {
   border-collapse: collapse;
 }
 .CountryFilter th, td {
+  padding: 0.25em;
   border: 1px solid gray;
 }
 
