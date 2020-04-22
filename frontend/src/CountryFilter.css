@@ -1,0 +1,11 @@
+.CountryFilter {
+  text-align: left;
+}
+
+.CountryFilter table {
+  border-collapse: collapse;
+}
+.CountryFilter th, td {
+  border: 1px solid gray;
+}
+
